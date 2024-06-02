@@ -3,11 +3,11 @@ name: Build
 on:
   push:
     branches:
-      - "develop"
+      - "release/v1.11.7"
       - "1.0-develop"
   pull_request:
     branches:
-      - "develop"
+      - "release/v1.11.7"
       - "1.0-develop"
 
 jobs:
