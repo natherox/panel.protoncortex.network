@@ -31,8 +31,8 @@ export default () => {
                         <TitledGreyBox title={'SFTP Details'} css={tw`mb-6 md:mb-10`}>
                             <div>
                                 <Label>Server Address</Label>
-                                <CopyOnClick text={`sftp://${ip(sftp.ip)}:${sftp.port}`}>
-                                    <Input type={'text'} value={`sftp://${ip(sftp.ip)}:${sftp.port}`} readOnly />
+                                <CopyOnClick text={`sftp://vault.protoncortex.com:${sftp.port}`}>
+                                    <Input type={'text'} value={`sftp://vault.protoncortex.com:${sftp.port}`} readOnly />
                                 </CopyOnClick>
                             </div>
                             <div css={tw`mt-6`}>
@@ -50,7 +50,7 @@ export default () => {
                                     </div>
                                 </div>
                                 <div css={tw`ml-4`}>
-                                    <a href={`sftp://${username}.${id}@${ip(sftp.ip)}:${sftp.port}`}>
+                                    <a href={`sftp://${username}.${id}@vault.protoncortex.com:${sftp.port}`}>
                                         <Button.Text variant={Button.Variants.Secondary}>Launch SFTP</Button.Text>
                                     </a>
                                 </div>
